@@ -41,6 +41,7 @@ echo "Đang chờ instance khởi động để lấy Public IP..."
 # BỔ SUNG: Chờ đến khi trạng thái instance là 'running' để chắc chắn IP đã được gán
 aws ec2 wait instance-running --instance-ids "$instance_id"
 
+
 public_ip=$(aws ec2 describe-instances \
   --instance-ids "$instance_id" \
   --output text \

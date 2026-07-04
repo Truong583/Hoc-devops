@@ -1,0 +1,9 @@
+html {
+    max-width: 70ch;
+    margin: 3em auto;
+}
+
+h1, p {
+    color: #1d1d1d;
+    font-family: sans-serif;
+}
